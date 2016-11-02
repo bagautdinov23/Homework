@@ -24,7 +24,7 @@ public class Main {
 		}
 
 		if(br1 != br2) {
-			System.out.println("NO");
+			System.err.println("ERROR");
 			return;
 		}
 		//end proverka
@@ -37,7 +37,7 @@ public class Main {
 			else if(n.charAt(i) == ')') {
 				br2++;
 				if(br1 < br2) {
-					System.out.println("NO");
+					System.err.println("ERROR");
 					return;
 				}
 			}
